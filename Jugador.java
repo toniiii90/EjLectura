@@ -1,11 +1,16 @@
 package OtroEjercicio;
 
 public class Jugador {
-    protected int ranking;
+    protected String ranking;
     protected String nombre;
 
-    public Jugador(int ranking, String nombre) {
+    public Jugador(String ranking, String nombre) {
         this.ranking = ranking;
         this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return ranking + " --> " + nombre;
     }
 }
